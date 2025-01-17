@@ -11,7 +11,7 @@ dotenv.config();
 const app=express();
 const PORT=8080;
 const corsOptions = {
-    origin: ['https://leader-board-fronted-51ff.vercel.app'||'http://localhost:3000'],
+    origin: ['https://leader-board-fronted-51ff.vercel.app'||'https://learn.angelsonearthhub.com/'],
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
     optionsSuccessStatus: 200, 
