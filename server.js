@@ -1,7 +1,6 @@
 const express=require('express');
 const dotenv=require('dotenv');
 const bcrypt=require('bcryptjs');
-
 const mongoose=require('./config/connection');
  const UserRouter=require('./routes/UserRoutes');
 const LeaderboardRouter=require('./routes/LaederboardRoutes');
@@ -9,9 +8,9 @@ const bodyParser = require('body-parser');
 const cors=require('cors');
 dotenv.config();
 const app=express();
-const PORT=8080;
+const PORT=8000;
 const corsOptions = {
-    origin: ['https://leader-board-fronted-51ff.vercel.app/'||'http://localhost:3000'],
+    origin: 'http://localhost:3000',
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
     optionsSuccessStatus: 200, 
