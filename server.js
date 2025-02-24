@@ -10,7 +10,7 @@ dotenv.config();
 const app=express();
 const PORT=8000;
 const corsOptions = {
-    origin: 'https://joyful-panda-f6d283.netlify.app',
+    origin: 'https://leader-board-fronted-x82h.vercel.app',
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
     optionsSuccessStatus: 200, 
