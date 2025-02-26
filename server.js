@@ -1,7 +1,5 @@
 const express=require('express');
-const dotenv=require('dotenv');
-const bcrypt=require('bcryptjs');
-const mongoose=require('./config/connection');
+const dotenv=require('dotenv')
  const UserRouter=require('./routes/UserRoutes');
 const LeaderboardRouter=require('./routes/LaederboardRoutes');
 const bodyParser = require('body-parser');
@@ -10,7 +8,7 @@ dotenv.config();
 const app=express();
 const PORT=8000;
 const corsOptions = {
-    origin: 'https://leader-board-fronted-x82h.vercel.app',
+    origin:  "http://localhost:3000",
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
     optionsSuccessStatus: 200, 
@@ -27,5 +25,5 @@ app.listen(PORT,()=>{
     console.log(`app is listening on port ${PORT}`);
 })
 app.get("/home",(req,res)=>{
-    res.send("Welcome Rajan")
+    res.send("Welcome ! AngelThon 5.0 LeaderBoard")
 })

@@ -31,10 +31,8 @@ const Overallleaderboard=async(req,res)=>{
     try {
         const result = await axios.get(`${process.env.APPSCRIPT_URL_3}`);
         console.log(`${process.env.APPSCRIPT_URL_3}`);
-        // console.log("result:",result);
+        console.log("result:",result);
         console.log(result.data);
-        // console.log(result.data[101].Name);
-        // console.log(result.data[101].Score);
         res.status(200).json(result.data);
     } catch (error) {
         res.status(500).json({ error: error.message });
