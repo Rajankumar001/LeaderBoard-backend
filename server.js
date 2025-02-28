@@ -8,7 +8,6 @@ dotenv.config();
 const app=express();
 const PORT=8000;
 const corsOptions = {
-    // origin:  "https://leader-board-fronted-47wt.vercel.app",
     origin:"https://leader-board-fronted-dy39.vercel.app",
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
